@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+   <RecipeDef>
+      <defName>ConvertToDirt</defName>
+      <label>Mix soil together</label>
+      <description>Mix soil to create dirt.</description>
+      <jobString>Mixing soil.</jobString>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Mine</effectWorking>
+      <workAmount>50</workAmount>
+      <recipeUsers>
+         <li>CraftingSpot</li>
+      </recipeUsers>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>FSFItemSoil</li>
+               </thingDefs>
+            </filter>
+            <count>100</count>
+         </li>
+      </ingredients>
+      <products>
+			  <PileofDirt>50</PileofDirt>
+		  </products>
+   </RecipeDef>
+   <RecipeDef>
+      <defName>ConvertToSoil</defName>
+      <label>Mix dirt together</label>
+      <description>Mix dirt to create soil.</description>
+      <jobString>Mixing dirt.</jobString>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Mine</effectWorking>
+      <workAmount>50</workAmount>
+      <recipeUsers>
+         <li>CraftingSpot</li>
+      </recipeUsers>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>PileofDirt</li>
+               </thingDefs>
+            </filter>
+            <count>100</count>
+         </li>
+      </ingredients>
+      <products>
+			  <FSFItemSoil>50</FSFItemSoil>
+		  </products>
+   </RecipeDef>
+</Defs>
